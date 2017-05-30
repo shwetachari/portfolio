@@ -1,0 +1,276 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<!-- Credits -->
+	<!--
+	Pet Icons:
+	Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+	Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+	Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+ -->
+	<!-- End Credits -->
+	<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Quicksand" rel="stylesheet">
+		<!-- BOOTSTRAP Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- BOOTSTRAP Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles/hogwarts.css">
+		<link rel="stylesheet" href="styles/animate.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://use.fontawesome.com/06591f047d.js"></script>
+</head>
+<body>
+		<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 main">
+			<h1 class="text-center">Create Your Hogwarts Character</h1>
+			<form class="form-horizontal">
+				<!-- Question 1: input character name -->
+				<div class="form-group">
+					<label class="col-xs-12">Enter your character's name:</label>
+					<div class="col-sm-6">
+						<input type="text" name="q1" class="col-xs-12" id="firstName" placeholder="First Name" value=""/>
+					</div>
+					<div class="col-sm-6">
+						<input type="text" name="q1" class="col-xs-12" id="lastName" placeholder="Last Name" value=""/>
+					</div>
+				</div>
+
+				<!-- Question 2 radio gender-->
+				<div class="form-group">
+					<label class="col-xs-12">Select your character's gender:</label>
+					<label class="radio-inline col-xs-offset-2 col-xs-3">
+  					<input type="radio" name="q2" id="q2Radio1" value="female"> Female
+					</label>
+					<label class="radio-inline col-xs-3">
+  					<input type="radio" name="q2" id="q2Radio2" value="male"> Male
+					</label>
+					<label class="radio-inline col-xs-3">
+  					<input type="radio" name="q2" id="q2Radio3" value="non-binary gender"> Other
+					</label>
+				</div>
+
+				<!-- Question 3 radio animal familiar-->
+				<div class="form-group">
+						<label class="col-xs-12">Select your character's animal familiar:</label>
+						<div class="row">
+						<label class="radio-inline col-sm-3 col-xs-3 col-sm-offset-2 col-xs-offset-1">
+	  					<input class="hidden" type="radio" name="q3" id="q3Radio1" value="toad"> <img class="col-sm-9 col-xs-12" src="images/hogwarts/toad.png"/>
+						</label>
+						<label class="radio-inline col-sm-3 col-xs-3">
+	  					<input class="hidden" type="radio" name="q3" id="q3Radio2" value="cat"> <img class="col-sm-9 col-xs-12" src="images/hogwarts/cat.png"/>
+						</label>
+						<label class="radio-inline col-sm-3 col-xs-3">
+	  					<input class="hidden" type="radio" name="q3" id="q3Radio3" value="owl"> <img class="col-sm-9 col-xs-12" src="images/hogwarts/owl.png"/>
+						</label>
+					</div>
+				</div>
+
+				<!-- Question 4 select trait most proud of-->
+				<div class="form-group">
+					<label class="col-xs-12">Select the trait your character is most proud of:</label>
+					<div class="col-xs-12">
+						<select id="q4" class="col-xs-12">
+							<option value="">Select a Trait</option>
+							<option value="det">Determination</option>
+						  <option value="ima">Imagination</option>
+						  <option value="res">Resilience</option>
+						  <option value="int">Intelligence</option>
+						  <option value="ori">Originality</option>
+							<option value="opt">Optimism</option>
+							<option value="kin">Kindness</option>
+						</select>
+					</div>
+				</div>
+
+				<!-- Question 5 select eye color-->
+				<div class="form-group">
+					<label class="col-xs-12">Select your character's eye color:</label>
+					<div class="col-xs-12">
+						<select id="q5" class="col-xs-12">
+							<option value="">Select an Eye Color</option>
+							<option value="black">Black</option>
+						  <option value="brown">Brown</option>
+						  <option value="hazel">Hazel</option>
+						  <option value="blue">Blue</option>
+						  <option value="green">Green</option>
+							<option value="gray">Gray</option>
+						</select>
+					</div>
+				</div>
+
+				<!-- Question 6 radio house-->
+				<div class="form-group">
+					<label class="col-xs-12">Select your character's house:</label>
+					<div class="text-center col-xs-12">
+						<label class="radio-inline col-md-2 col-md-offset-2">
+	  					<input class="hidden" type="radio" name="q6" id="q6Radio1" value="gry"> <img class="house" src="images/hogwarts/crestG.png"/>
+							<div class="houseInfo hidden">
+								<span class="bold">Gryffindor</span> values bravery, daring, nerve, and chivalry.
+							</div>
+						</label>
+						<label class="radio-inline col-md-2">
+	  					<input class="hidden" type="radio" name="q6" id="q6Radio2" value="huf"> <img class="house" src="images/hogwarts/crestH.png"/>
+							<div class="houseInfo hidden">
+								<span class="bold">Hufflepuff</span> values hard work, dedication, patience, loyalty, and fair play.
+							</div>
+						</label>
+						<label class="radio-inline col-md-2">
+	  					<input class="hidden" type="radio" name="q6" id="q6Radio3" value="rav"> <img class="house" src="images/hogwarts/crestR.png"/>
+							<div class="houseInfo hidden">
+								<span class="bold">Ravenclaw</span> values intelligence, knowledge, and wit.
+							</div>
+						</label>
+						<label class="radio-inline col-md-2">
+	  					<input class="hidden" type="radio" name="q6" id="q6Radio3" value="sly"><img class="house" src="images/hogwarts/crestS.png"/>
+							<div class="houseInfo hidden">
+								<span class="bold">Slytherin</span> values ambition, cunning, and resourcefulness.
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<!-- Question 7 radio avatar-->
+				<div class="form-group">
+					<label class="col-xs-12">Select an avatar for your character:</label>
+					<div class="text-center col-xs-offset-1">
+						<div class="col-xs-12 text-center">
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi1">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi1" value="avi1"><br/><img class="avatarImg" src="images/hogwarts/avi1.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi2">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi2" value="avi2"><br/><img class="avatarImg" src="images/hogwarts/avi2.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi3">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi3" value="avi3"><br/><img class="avatarImg" src="images/hogwarts/avi3.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi4">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi4" value="avi4"><br/><img class="avatarImg" src="images/hogwarts/avi4.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi5">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi5" value="avi5"><br/><img class="avatarImg" src="images/hogwarts/avi5.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi6">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi6" value="avi6"><br/><img class="avatarImg" src="images/hogwarts/avi6.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi7">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi7" value="avi7"><br/><img class="avatarImg" src="images/hogwarts/avi7.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi8">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi8" value="avi8"><br/><img class="avatarImg" src="images/hogwarts/avi8.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi9">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi9" value="avi9"><br/><img class="avatarImg" src="images/hogwarts/avi9.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi10">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi10" value="avi10"><br/><img class="avatarImg" src="images/hogwarts/avi10.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi11">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi11" value="avi11"><br/><img class="avatarImg" src="images/hogwarts/avi11.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi12">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi12" value="avi12"><br/><img class="avatarImg" src="images/hogwarts/avi12.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi13">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi13" value="avi13"><br/><img class="avatarImg" src="images/hogwarts/avi13.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi14">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi14" value="avi14"><br/><img class="avatarImg" src="images/hogwarts/avi14.png"/>
+							</label>
+							<label class="radio-inline col-xs-4 col-sm-2" for="labavi15">
+								<input class="text-center hidden" type="radio" name="q7" id="labavi15" value="avi15"><br/><img class="avatarImg" src="images/hogwarts/avi15.png"/>
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Question 8 input and confirm email-->
+				<div class="form-group">
+					<label class="col-xs-12">Enter your email:</label>
+					<div class="col-xs-12">
+						<input name="q8" type="text" class="form-control" id="email" placeholder="e.g. yourname@site.com"/>
+					</div>
+					<label class="col-xs-12">Confirm your email:</label>
+					<div class="col-xs-12">
+						<input name="q8" type="text" class="form-control" id="confirmEmail" placeholder="e.g. yourname@site.com"/>
+					</div>
+				</div>
+
+			</form>
+			<button  onclick="submitForm()" class="btn col-sm-6 col-sm-offset-3 col-xs-12" id="submit">Create Character Profile</button>
+			<div class="" id="status"></div>
+
+			<!-- RESULTS (CHARACTER PROFILE) -->
+			<div id="results" class="hidden">
+				<h1 class="col-xs-12 text-center">Character Profile</h1>
+				<div class="col-sm-4 col-sm-offset-1">
+					<div id="avatarBG">
+						<img class="col-xs-12" id="aviImg" src=""/>
+					</div>
+					<img class="col-xs-10 col-xs-offset-1" id="houseImg" src=""/>
+					<img class="col-xs-10 col-xs-offset-1" id="familiarImg" src=""/>
+				</div>
+				<div class="col-sm-5 col-sm-offset-1">
+					<h2>Student Name:</h2>
+						<div class="resultsText" id="resName"></div>
+					<h2>Gender:</h2>
+						<div class="resultsText" id="resGender"></div>
+					<h2>House:</h2>
+						<div class="resultsText" id="resHouse"></div>
+						<h2>Animal Familiar:</h2>
+						<div class="resultsText" id="resFamiliar"></div>
+						<h2>Wand Wood:</h2>
+						<div class="resultsText" id="resWandWood"></div>
+					<h2>Wand Core:</h2>
+						<div class="resultsText" id="resWandCore"></div>
+					<br/>
+					<h2>User Email:</h2>
+						<div class="resultsText" id="resEmail"></div>
+				</div>
+				<button class="btn col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1" onclick="hideResults()">Go Back</button>
+		</div>
+	</div>
+
+
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="scripts/hogwarts.js"></script>
+	<script src="scripts/sparkle.js"></script>
+	<script>
+		$(document).ready(function() {
+      $("h1").sparkle({
+        "color": ["#ff0080","#ff0080","#FFF"] ,
+        count: 70 ,
+        speed: 0.5,
+				minSize: 5,
+  			maxSize: 10,
+				direction: "both"
+      });
+			$("button").sparkle({
+        color: ["#ff0080","#ff0080","#FFF"],
+        speed: 0.3,
+				minSize: 3,
+  			maxSize: 6,
+				count:20,
+        });
+			$("label").sparkle({
+				color: ["#2eafea","#e56604"],
+				speed: 0.4,
+				count:30,
+				minSize: 5,
+  			maxSize: 9,
+				direction: "both"
+			})
+			$("html").sparkle({
+				color: ["rgb(255, 255, 255)"],
+				speed:0.4,
+				count:80,
+				minSize:3,
+				maxSize:8,
+				direction:"down",
+			})
+		});
+</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic);
+
+html{
+  height:100%;
+}
+body{
+  height:100%;
+  overflow:hidden;
+  background: #5ead5a;/* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#5ead5a, #39724c); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#5ead5a, #39724c); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#5ead5a, #39724c); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#5ead5a, #39724c); /* Standard syntax */
+}
+h1 {
+  font-family:'Quicksand', sans-serif;
+  font-size:50px;
+  margin: 50px auto 0;
+  color:white;
+  text-transform: uppercase;
+}
+form {
+  margin:40px 0 20px;
+  height: 300px;
+  padding: 35px;
+  background-color: #f2f0ed;
+}
+input password {
+	font-size: 2em;
+  font-family: 'Lato', sans-serif;
+}
+.btn-success {
+  padding: 10px 0;
+  margin:25px 0 18px;
+  font-weight:500;
+  font-size:22px;
+  background-color: #5ead5a;
+  font-family:'Quicksand', sans-serif;
+  text-transform: uppercase;
+}
+.form-control {
+  padding: 25px 10px;
+}
+.btn-link {
+  margin:0;
+  padding-top:0;
+  font-size:18px;
+  font-family:'Quicksand', sans-serif;
+}
+#status {
+  font-family:'Quicksand', sans-serif;
+  font-size:18px;
+  word-wrap: break-word;
+  padding:20px;
+  background-color:rgb(215, 255, 253);
+  border-radius:5px;
+}
+input[type="password"], input[type="name"]{
+  font-size:16px;
+}
+.regForm{
+  background-color: #f2f0ed;
+}

@@ -1,0 +1,156 @@
+/*font-family: 'Cinzel Decorative', cursive;
+font-family: 'Quicksand', sans-serif;*/
+html, body{
+  background-image: url("../images/hogwarts/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+h1{
+  font-family: 'Cinzel Decorative', cursive;
+  font-size:55px;
+  padding-bottom:20px;
+  margin: 30px auto 15px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+.main{
+  height:100%;
+  background-color: rgba(255,255,255,0.9);
+}
+img {
+  height:auto;
+  margin-top:5px;
+}
+#status{
+  padding: 20px;
+  color:white;
+  margin-top:20px;
+}
+.failure {
+  background-color:rgb(187, 73, 73);
+}
+.success {
+  background-color:rgb(122, 181, 126);
+}
+button, .btn  {
+  style:none;
+  font-family: 'Quicksand', sans-serif;
+  font-size:25px;
+  font-weight:normal;
+  padding:15px;
+  margin-top:20px;
+  margin-bottom:10px;
+  background-color:black;
+  color:white;
+  border-radius:8px;
+  }
+button:hover, .btn:hover{
+  color: rgba (255, 255, 255, 0.9)
+}
+/*labels for questions*/
+label.col-xs-12{
+  font-size:25px;
+}
+/*all other labels*/
+label {
+ font-family:'Quicksand', sans-serif;
+ font-size:20px;
+ margin-top:20px;
+}
+input[type="text"], select, option{
+  font-family:'Quicksand', sans-serif;
+  font-size:20px;
+  padding:10px;
+  border-radius:5px;
+}
+input[type="text"]{
+  border-style: solid;
+  border-width:1px;
+  border-color:rgb(122, 122, 122);
+}
+#email, #confirmEmail {
+  padding:25px;
+}
+img.col-sm-9{
+  padding:10px 0;
+}
+.avatarImg{
+  z-index:-5;
+  margin-bottom:25px;
+  width:150%;
+}
+input[type="radio"]:checked ~ img{
+  outline-color:rgb(120, 203, 250);
+  outline-width: 2px;
+  outline-style: solid;
+}
+img:hover ~ .houseInfo {
+  display:block !important;
+  padding:30px;
+  min-height:20px;
+  width:200px;
+  size:inherit;
+  position: absolute;
+  z-index:15;
+  font-size:14px;
+  color:black;
+  background-color: rgba(255,255,255,.8);
+  top:-10px;
+  right:0px;
+  word-wrap: break-word;
+}
+img.house{
+  padding:10px 5px;
+  width:120%;
+}
+.bold{
+  font-weight:bold;
+}
+.hidden{
+  display:none;
+}
+.results{
+  height:100%;
+  background-color:white;
+  position:absolute;
+  margin:0;
+  z-index:10;
+  top:0;
+  padding-top:20px;
+  font-family: 'Quicksand', sans-serif;
+}
+h2{
+  font-size:25px;
+  font-weight:bold;
+  padding-top:10px;
+}
+.resultsText{
+  font-size:20px;
+  padding-left:20px;
+}
+#aviImg{
+  padding:0 !important;
+  margin:0;
+}
+#avatarBG{
+  border: 2px solid rgb(0,0,0);
+}
+#houseImg, #familiarImg{
+  margin-top:15px;
+  margin-bottom:10px;
+}
+.gryff{
+  background-color: rgb(191, 63, 63);
+}
+.huffl{
+  background-color: rgb(247, 233, 111);
+}
+.raven{
+  background-color: rgb(76, 104, 150);
+}
+.slyth{
+  background-color: rgb(73, 112, 80);
+}
+/*creat house info divs that appear when hover over house names, initial= display:none, hover = display:block*/
+/*create background color divs: in js, give div in results innerHTML a className of "aviBg" + charInfo.house <--have dif colored background for each house/class name*/
