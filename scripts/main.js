@@ -117,17 +117,23 @@
 		}
 
 
-// PARALLAX EFFECT INTRO
+// PARALLAX EFFECT INTRO/CONTACT
+var cbg1 = document.getElementById("cbg1");
+var cbg2 = document.getElementById("cbg2");
+var cbg3 = document.getElementById("cbg3");
+var cbg4 = document.getElementById("cbg4");
+var cbg5 = document.getElementById("cbg5");
+
 var scrollheight = document.body.scrollHeight // height of entire document
 var windowheight = window.innerHeight // height of browser window
 
 function parallax(){
  var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
  var scrollamount = (scrolltop / (scrollheight-windowheight)) * 3 // get amount scrolled (in %)
- bg2.style.top = -scrolltop * .8 + 'px'; // move bubble2 at 50% of scroll rate
- bg4.style.top = -scrolltop * .4 + 'px'; // move bubble2 at 50% of scroll rate
- bg5.style.top = -scrolltop * .2 + 'px'; // move bubble1 at 20% of scroll rate
- bg3.style.left = 0 + scrollamount * 10 + '%'; // set position of fish in percentage (starts at -100%)
+ bg2.style.top = -scrolltop * .8 + 'px';
+ bg4.style.top = -scrolltop * .4 + 'px';
+ bg5.style.top = -scrolltop * .2 + 'px';
+ bg3.style.left = 0 + scrollamount * 10 + '%';
 }
 
 window.addEventListener('scroll', function(){ // on page scroll
