@@ -117,13 +117,7 @@
 		}
 
 
-// PARALLAX EFFECT INTRO/CONTACT
-var cbg1 = document.getElementById("cbg1");
-var cbg2 = document.getElementById("cbg2");
-var cbg3 = document.getElementById("cbg3");
-var cbg4 = document.getElementById("cbg4");
-var cbg5 = document.getElementById("cbg5");
-
+// PARALLAX EFFECT INTRO
 var scrollheight = document.body.scrollHeight // height of entire document
 var windowheight = window.innerHeight // height of browser window
 

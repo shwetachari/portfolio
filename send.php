@@ -15,9 +15,9 @@
 			exit;
 		}
 
-		$recipient = "demo@alexilin.ru"; // Replace this address with yours.
+		$recipient = "shwetachari@gmail.com";
 
-		$subject = "Mail from your site";
+		$subject = "Mail from ChariCodes";
 
 		$email_content = "Name: $name\n";
 		$email_content .= "Email: $email\n\n";
